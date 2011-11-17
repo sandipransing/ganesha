@@ -1,1 +1,1 @@
-rvm --create use  "1.9.3-head@rails311"
+rvm --create use  "1.9.2-p290@rails311"

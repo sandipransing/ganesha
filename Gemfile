@@ -5,7 +5,7 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem "pg", :group => [:production]
+#gem "pg", :group => [:production]
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.1"

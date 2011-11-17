@@ -1,0 +1,14 @@
+%h2 Users List
+.well
+  %a.btn.primary{ :href=> root_url} Register
+%table{:class => :'zebra-striped'}
+  %tbody
+    %tr
+      %th Reg.No
+      %th Reg-Date
+      %th Height
+      %th Birth-Dt
+      %th Education
+      %th Residence
+      %th Occupation
+    = render :partial => 'user', :collection => @users
