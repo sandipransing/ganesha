@@ -17,7 +17,7 @@
           %p.pull-right
             - if user_signed_in?
               %a{:href => ""} 
-                = current_user.name
+                = current_user.first_name
               |
               = link_to "Logout", destroy_user_session_path
             - else
@@ -26,9 +26,9 @@
             %li.active= link_to "Home", root_url
             %li= link_to "Search", "#"
             %li= link_to "Register", new_user_registration_path
-            %li= link_to "Grooms", "#"
-            %li= link_to "Brides", "#"
-            %li= link_to "Contact Us", "#"
+            %li= link_to "Grooms", grooms_url
+            %li= link_to "Brides", brides_url
+            %li= link_to "Contact Us", contact_url
           %form{:action=>"", :class=>"pull-left"}
             %input{:type=>"text", :placeholder=>"Search"}
     .container

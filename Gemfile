@@ -5,7 +5,7 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-#gem "pg", :group => [:production]
+gem "pg", :group => [:production]
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.1"
@@ -35,6 +35,8 @@ end
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'paperclip'
+gem 'will_paginate'
 gem 'therubyracer'
 gem "devise"
 gem "haml", ">= 3.0.0"

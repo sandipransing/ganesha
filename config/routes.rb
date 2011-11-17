@@ -1,7 +1,12 @@
 Cdc::Application.routes.draw do
 
   devise_for :users
+  
+  match '/brides', :to => 'users#index', :as => :brides
+  match '/grooms', :to => 'users#index', :as => :grooms
+  match '/contact', :to => 'home#contact', :as => :contact
 
+  resources :users, :except => [:new, :create]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
