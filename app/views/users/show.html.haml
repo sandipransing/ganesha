@@ -1,0 +1,22 @@
+- content_for :sidebar do
+  %b
+    Name - #{@user.name}
+  %br
+  %div
+    %a.thumbnail{:href => user_url(@user)}
+      %img{:src => @user.photo_url}
+%h2 Details
+
+%table{:style => 'width:500px'}
+  %tr
+    %th Name
+    %td #{@user.name}
+  %tr
+    %th Email
+    %td #{@user.email}
+  %tr
+    %th City
+    %td #{@user.city}
+  %tr
+    %th State
+    %td #{@user.state}

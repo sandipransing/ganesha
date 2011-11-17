@@ -1,0 +1,7 @@
+- content_for :layout_content do
+  .container-fluid
+    .sidebar
+      = yield(:sidebar)
+    .content
+      = yield  
+= render :file => 'layouts/base'

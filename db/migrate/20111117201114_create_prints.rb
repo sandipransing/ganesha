@@ -4,7 +4,7 @@ class CreatePrints < ActiveRecord::Migration
       t.string    :image_file_name #Uploading file/image
       t.string    :image_file_size
       t.string    :image_content_type
-      t.references :resource, :polymorphic => true
+      t.references :user
       t.timestamps
     end
   end
